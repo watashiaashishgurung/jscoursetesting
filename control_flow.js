@@ -21,8 +21,9 @@ if (isLoggedIn) {
 } else {
     userMessage = "Please log in to access the system.";
 }
-// userType = "subscriber";
 console.log("User Message:", userMessage);
+// userType = "subscriber";
+// setting up permissions for a user based on their role using switch
 let userType = "subscriber";
 let userCategory;
 switch (userType) {
