@@ -56,3 +56,5 @@ If you have suggestions, feel free to fork the repository, create a feature bran
 
 ## License
 This project is licensed under the MIT License.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
