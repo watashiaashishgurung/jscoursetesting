@@ -8,6 +8,7 @@ function submitFeedback(event) {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
     const feedback = document.getElementById('feedbackText').value;
+    const userExperience = document.getElementById('userExperience').value;
 
     // You can add code here to process the feedback, e.g., send it to a server
 
@@ -18,6 +19,7 @@ function submitFeedback(event) {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    document.getElementById('userExperienceDisplay').innerHTML = userExperience;
 
     alert('Thank you for your valuable feedback');
 
@@ -29,6 +31,7 @@ submitButton.addEventListener('click', submitFeedback);
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-      submitFeedback();
+        event.preventDefault(); // Prevent the default form submission behavior
+        submitFeedback(event);
     }
-  });
+});
