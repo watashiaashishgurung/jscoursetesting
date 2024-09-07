@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow</title>
+    <link rel="stylesheet" href="control_flow.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#without-addEventListener">Without addEventListener</a></li>
+            <li><a href="#with-addEventListener">With addEventListener</a></li>
+            <li><a href="#hoverMe">hoverMe</a></li>
+            <li><a href="#moveArea">moveArea</a></li>
+            <li><a href="#keyInput">keyInput</a></li>
+            <li><a href="#pressInput">pressInput</a></li>
+            <li><a href="#formSubmission">Form Submission</a></li>
+            <li><a href="#focusInput">focusInput</a></li>
+            <li><a href="#loadEvent">load event</a></li>
+            <li><a href="#resizeEvent">Resize event</a></li>
+            <li><a href="#scrollEvent">Scroll event</a></li>
+        </ul>
+    </nav>
+
+    <h1>Control Flow and Conditional Statements</h1>
+    <h1>Javascript Event listening scripts</h1>
+
+    <div class="section" id="without-addEventListener">
+        <h2>Without addEventListener</h2>
+        <p>In the absence of addEventListener, the HTML embeds an onclick attribute within the button element, triggering the specified function (handleButtonClick()) upon clicking.</p>
+        
+        <button id="myButton1" onclick="handleButtonClick1()">Click me</button>
+        <script>
+            function handleButtonClick1() {
+                console.log('Button clicked!');
+            }
+        </script>
+    </div>
+
+    <div class="section" id="with-addEventListener">
+        <h2>With addEventListener</h2>
+        <button id="myButton2">Click me</button>
+        <script>
+            // Get the button element
+            const button2 = document.getElementById('myButton2');
+            // Add event listener for 'click' event
+            button2.addEventListener('click', handleButtonClick2);
+            // Function to handle button click
+            function handleButtonClick2() {
+                console.log('Button clicked!');
+            }
+        </script>
+    </div>
+
+    <div class="section" id="hoverMe">
+        <h2>hoverMe</h2>
+        <button id="myButton3">Click me</button>
+        <script>
+            // Get the button element
+            const button3 = document.getElementById('myButton3');
+            // Add event listener for 'click' event
+            button3.addEventListener('click', handleButtonClick3);
+            // Function to handle button click
+            function handleButtonClick3() {
+                console.log('Button clicked!');
+            }
+        </script>
+    </div>
+
+    <div class="section" id="moveArea">
+        <h2>moveArea</h2>
+        <div id="moveArea" style="width: 200px; height: 200px; background-color: lightcoral;"></div>
+        <script>
+            const moveArea = document.getElementById('moveArea');
+            moveArea.addEventListener('mousemove', function(event) {
+                // Generate random color
+                const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+                // Change background color
+                moveArea.style.backgroundColor = randomColor;
+            });
+        </script>
+    </div>
+
+    <div class="section" id="keyInput">
+        <h2>keyInput</h2>
+        <input type="text" id="keyInput">
+        <script>
+            const keyInput = document.getElementById('keyInput');
+            keyInput.addEventListener('keydown', function() {
+                console.log('Key pressed down!');
+            });
+            keyInput.addEventListener('keyup', function() {
+                console.log('Key released!');
+            });
+        </script>
+    </div>
+
+    <div class="section" id="pressInput">
+        <h2>pressInput</h2>
+        <input type="text" id="pressInput">
+        <script>
+            const pressInput = document.getElementById('pressInput');
+            pressInput.addEventListener('keypress', function() {
+                console.log('Key pressed!');
+            });
+        </script>
+    </div>
+
+    <div class="section" id="formSubmission">
+        <h2>Form Submission</h2>
+        <form id="myForm">
+            <input type="text" id="textInput">
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevents the default form submission behavior
+                console.log('Form submitted!');
+            });
+        </script>
+    </div>
+
+    <div class="section" id="focusInput">
+        <h2>focusInput</h2>
+        <input type="text" id="focusInput" placeholder="Click here">
+        <script>
+            const focusInput = document.getElementById('focusInput');
+            focusInput.addEventListener('focus', function() {
+                console.log('Input focused');
+            });
+            focusInput.addEventListener('blur', function() {
+                console.log('Input blurred');
+            });
+        </script>
+    </div>
+
+    <div class="section" id="loadEvent">
+        <h2>load event</h2>
+        <script>
+            window.addEventListener('load', function() {
+                console.log('Page and all resources loaded');
+            });
+        </script>
+    </div>
+
+    <div class="section" id="resizeEvent">
+        <h2>Resize event</h2>
+        <script>
+            window.addEventListener('resize', function() {
+                console.log('Window resized');
+            });
+        </script>
+    </div>
+
+    <div class="section" id="scrollEvent">
+        <h2>Scroll event</h2>
+        <div style="height: 2000px; background-color: lightblue;">
+            Scroll down
+        </div>
+        <script>
+            window.addEventListener('scroll', function() {
+                console.log('Document scrolled');
+            });
+        </script>
+    </div>
+
+    <footer>
+        <p>Reference: <a href="https://www.coursera.org/learn/javascript-programming-essentials/ungradedWidget/1bgOw/reading-introduction-to-addeventlistener" target="_blank">Introduction to addEventListener</a></p>
+    </footer>
+</body>
+</html>
