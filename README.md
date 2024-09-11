@@ -51,6 +51,9 @@ To get started with this project:
 ### Functions and Event Handling
 - Exercises focusing on handling user interactions with `addEventListener()` and defining callback functions.
 
+#### Study exercises eventListener
+- Link to site [click here](https://watashiaashishgurung.github.io/event_listener/) to see the results.
+
 ## How to Contribute
 If you have suggestions, feel free to fork the repository, create a feature branch, and submit a pull request.
 
