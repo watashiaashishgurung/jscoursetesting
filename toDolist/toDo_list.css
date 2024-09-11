@@ -1,0 +1,123 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container for the to-do list */
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.todo-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input styling */
+.todo-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Button styling */
+.todo-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+    background-color: #218838;
+}
+
+/* List styling */
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.todo-list li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.todo-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.todo-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Delete button styling */
+.todo-delete {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-delete:hover {
+    background: #c82333;
+}
+
+/* Clear completed button styling */
+#clearCompletedBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0798ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#clearCompletedBtn:hover {
+    background-color: #e0a800;
+}
