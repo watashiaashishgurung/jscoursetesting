@@ -119,5 +119,22 @@ body {
 }
 
 #clearCompletedBtn:hover {
-    background-color: #e0a800;
+    background-color: green;
+}
+/* Clear All button styling */
+#clearAllBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0798ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#clearAllBtn:hover {
+    background-color: red;
 }
