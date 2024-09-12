@@ -1,0 +1,139 @@
+/* style for the element with id "box1" */
+#box1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 5px #888;
+    border-radius: 5px;
+
+}
+/* style for the element with id "box2" */
+#box2 {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    padding: 2px;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 5px #888;
+    border-radius: 1%;
+
+}
+/* style for the element with id "box3" */
+#box3 {
+    width: 85%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 2px;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 5px #888;
+    border-radius: 1%;
+
+}
+
+/* Style for the element with id "main-heading" */
+#main-heading {
+    color: lightblue;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the element with id "content-paragraph" */
+#content-paragraph {
+    color: lightgray;
+    font-size: 1.2em;
+    margin: 20px;
+    line-height: 1.5;
+}
+/* Style for the element with id "my-paragraph" */
+#my-paragraph {
+    color: silver;
+    font-size: 1.2em;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+/* Style for elements with class "heading" */
+.heading {
+    color: red;
+    font-family: 'Arial, sans-serif';
+    font-weight: bold;
+}
+
+/* Style for elements with class "content" */
+.content-paragraph {
+    color: skyblue;
+    font-family: 'Georgia, serif';
+    font-style: italic;
+}
+/* Style for element with class with "highlighted-paragraph" */
+.highlighted-paragraph {
+    color: white;
+    background-color: pink;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Style ul element with id "my-list" */
+ul {
+    list-style-type: square; /* Change bullet points to squares */
+    padding-left: 20px; /* Add padding to the left */
+    margin: 20px; /* Add margin around the list */
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+ul li {
+    color: #333; /* Dark gray text color */
+    font-size: 1em; /* Font size */
+    margin: 5px 0; /* Margin between list items */
+    padding: 5px; /* Padding inside list items */
+}
+
+/* Button styling */
+.todo-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*style button with element Id "addTaskBtn" */
+#addTaskBtn:hover { 
+    padding: 2px;
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*style button with element Id "clearCompletedBtn" */
+#clearCompletedBtn:hover { 
+    padding: 2px;
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*style button with element Id "clearAllBtn" */
+#clearAllBtn:hover { 
+    padding: 2px;
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
